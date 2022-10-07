@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="text-gray-900 bg-white-25 font-sans-serif">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hepta tecnologia</title>
+    <link rel="icon" href="https://www.hepta.com.br/assets/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Source Sans Pro', 'sans-serif'],
+            body: ['Source Sans Pro', 'sans-serif'],
+            heading: ['Source Sans Pro', 'sans-serif']
+          },
+          fontSize: {
+            xs: '0.75rem',
+            sm: '0.875rem',
+            md: '1rem',
+            lg: '1.125rem',
+            xl: '1.25rem',
+            '2xl': '1.5rem',
+            '3xl': '1.875rem',
+            '4xl': '2.25rem',
+            '5xl': '3rem',
+            '6xl': '3.75rem',
+            '7xl': '4.5rem',
+            '8xl': '6rem',
+            '9xl': '8rem'
+          },
+          extend: {
+            colors: {
+              red: {
+                900: '#99111B',
+                800: '#B21A24',
+                700: '#C42A2D',
+                600: '#D63636',
+                500: '#DB1826',
+                400: '#E01C1C',
+                300: '#E61E1E',
+                200: '#EB1F1F',
+                100: '#FFB2BB'
+              },
+              yellow: {
+                900: '#997600',
+                500: '#FFC400',
+                100: '#FFF3CC'
+              },
+              green: {
+                900: '#003241',
+                850: '#1B2C32', //dark
+                800: '#005d66',
+                700: '#007e82',
+                600: '#009f9f',
+                500: '#008693',
+                400: '#00737D',
+                350: '#1DDEBD', //dark
+                300: '#006067',
+                200: '#B2F8FF',
+                100: '#DCEDEF'
+              },
+              blue: {
+                900: '#5D7A84',
+                300: '#98B2BF',
+                200: '#D5E7EA',
+                50: '#F0F7F8'
+              },
+              white: {
+                900: '#F5F5F5',
+                800: '#EBEBEB',
+                700: '#E1E1E1',
+                600: '#D8D8D8',
+                500: '#CECECE',
+                400: '#C5C5C5',
+                300: '#BDBDBD',
+                200: '#B2B2B2',
+                150: '#BFBFC8', //dark
+                100: '#999999',
+                75: '#E1E1E6', //dark
+                50: '#ffffff',
+                25: '#FAFAFA'
+              },
+              black: {
+                900: '#171922',
+                800: '#1B202B',
+                700: '#29292E'
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="header" class="bg-white-50">
+      <div class="container max-w-7xl mx-auto text-sm">
+        <div
+          class="flex w-full items-center text-gray-600 min-h-[84px] py-2 px-4"
+        >
+          <div class="flex items-center px-2">
+            <a href="https://www.hepta.com.br">
+              <img
+                src="https://www.hepta.com.br/assets/logo-hepta.svg"
+                alt="logo hepta"
+                width="150"
+                height="auto"
+              />
+            </a>
+          </div>
+          <div class="flex ml-12 justify-between w-full">
+            <div
+              class="flex gap-6 items-center text-gray-500 hover:text-gray-800"
+            >
+              <a href="https://www.hepta.com.br/solucoes" class="">
+                Soluções
+              </a>
+              <!-- <a href="https://www.hepta.com.br/insights-e-noticias" class="">
+                Insights e Notícias
+              </a> -->
+              <a href="https://www.hepta.com.br/sobre-nos" class="">
+                Sobre nós
+              </a>
+            </div>
+            <div
+              class="flex gap-6 items-center text-gray-600 hover:text-gray-900"
+            >
+              <a href="https://www.hepta.com.br/governanca" class="">
+                Governança
+              </a>
+              <a href="https://www.hepta.com.br/carreiras" class="">
+                Carreiras
+              </a>
+              <a
+                href="https://www.hepta.com.br/entre-em-contato"
+                class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white-25 bg-green-900 hover:bg-green-700"
+              >
+                Entre em contato
+              </a>
+              <a href="https://www.hepta.com.br/search">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  focusable="false"
+                  class="chakra-icon css-x8hu86"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main id="main" class="main relative">
+      <div class="static bg-gradient-to-b from-green-100 to-white-25">
+        <div class="container max-w-7xl mx-auto">
+          <h1>Hello, world!</h1>
+        </div>
+      </div>
+
+      <footer class="bg-green-900">
+        <div class="container max-w-7xl mx-auto">
+          <div id="site-map" class="py-8">
+            <div class="grid grid-cols-5 text-white-25 text-lg bold w-full">
+              <div>
+                <a
+                  class="font-bold text-xl"
+                  href="https://www.hepta.com.br/solucoes"
+                >
+                  Soluções
+                </a>
+              </div>
+              <!-- <div>
+                <a
+                  class="font-bold text-xl"
+                  href="https://www.hepta.com.br/insights-e-noticias"
+                >
+                  Insights e Notícias
+                </a>
+              </div> -->
+              <div>
+                <a
+                  class="font-bold text-xl"
+                  href="https://www.hepta.com.br/sobre-nos"
+                >
+                  Sobre nós
+                </a>
+              </div>
+              <div>
+                <a
+                  class="font-bold text-xl"
+                  href="https://www.hepta.com.br/governanca"
+                >
+                  Governança
+                </a>
+              </div>
+              <div>
+                <a
+                  class="font-bold text-xl"
+                  href="https://www.hepta.com.br/carreiras"
+                >
+                  Carreiras
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border-solid border-x-8 border-t-8 border-green-100 min-h-[250px] px-4 pt-4 text-white-25"
+          >
+            <div class="flex justify-between">
+              <!-- logo -->
+              <div class="flex items-center">
+                <a href="https://www.hepta.com.br">
+                  <img
+                    src="https://www.hepta.com.br/assets/logo-hepta-branca.svg"
+                    alt="logo hepta"
+                    width="150"
+                    height="auto"
+                  />
+                </a>
+              </div>
+              <!-- end logo -->
+              <!-- social -->
+              <div class="flex items-center gap-4">
+                <a
+                  href="https://www.instagram.com/heptatecnologia/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-white-25 text-lg"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    focusable="false"
+                    class="chakra-icon css-1rgvbqi"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill-rule="nonzero"
+                        d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/heptatecnologia/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-white-25 text-lg"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    focusable="false"
+                    class="chakra-icon css-1rgvbqi"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill-rule="nonzero"
+                        d="M13 9h4.5l-.5 2h-4v9h-2v-9H7V9h4V7.128c0-1.783.186-2.43.534-3.082a3.635 3.635 0 0 1 1.512-1.512C13.698 2.186 14.345 2 16.128 2c.522 0 .98.05 1.372.15V4h-1.372c-1.324 0-1.727.078-2.138.298-.304.162-.53.388-.692.692-.22.411-.298.814-.298 2.138V9z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/hepta-tecnologia/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-white-25 text-lg"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    focusable="false"
+                    class="chakra-icon css-1rgvbqi"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M12 9.55C12.917 8.613 14.111 8 15.5 8a5.5 5.5 0 0 1 5.5 5.5V21h-2v-7.5a3.5 3.5 0 0 0-7 0V21h-2V8.5h2v1.05zM5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-1 2h2V21H4V8.5z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.youtube.com/heptatecnologia"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-white-25 text-lg"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    focusable="false"
+                    class="chakra-icon css-1rgvbqi"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill-rule="nonzero"
+                        d="M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 w-full gap-8 justify-between items-start py-8"
+            >
+              <div id="address" class="flex flex-col gap-4">
+                <p>
+                  SEUPN QD. 513 BL. D Nº. 38 Salas 201 A 220 <br />
+                  Ed. Imperador– Asa Norte – Brasília/DF - CEP: 70.760-524
+                </p>
+                <div class="flex flex-start gap-4">
+                  <a href="tel:5561-3961-7777" class="flex items-center gap-1">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      focusable="false"
+                      class="chakra-icon css-uqqaxt"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z"
+                        ></path>
+                      </g>
+                    </svg>
+                    +55 (61) 3961-7777
+                  </a>
+                  <a
+                    href="mailto:contato@hepta.com.br"
+                    class="flex items-center gap-1"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      focusable="false"
+                      class="chakra-icon css-uqqaxt"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z"
+                        ></path>
+                      </g>
+                    </svg>
+                    contato@hepta.com.br
+                  </a>
+                </div>
+              </div>
+              <div id="right-links" class="flex justify-end gap-4">
+                <a href="https://www.hepta.com.br/politica-de-privacidade"
+                  >Política de privacidade</a
+                >
+                <a href="https://www.hepta.com.br/acessibilidade"
+                  >Acessibilidade</a
+                >
+              </div>
+            </div>
+            <div
+              class="copyright w-full border-t-2 border-green-100 border-solid py-2"
+            >
+              <p>
+                <span>
+                  Todos os direitos reservados © 2022 | Hepta Tecnologia
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
